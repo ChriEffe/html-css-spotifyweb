@@ -24,6 +24,10 @@ ul  {
     font-weight: bold;
 }
 
+.relative  {
+    position: relative;
+}
+
 /* left navbar */
 .left-navbar  {
     width: 18em;
@@ -120,9 +124,26 @@ main .left-navbar h4  {
 
 /* top navbar */
 .top-navbar  {
-    height: 50px;
-    width: 800px;
-    background-color: blueviolet;
+    height: 4em;
+    width: 85%;
+    background-color: rgba(8, 11, 18, 0.9);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.top-navbar button  {
+    border: 1px solid white;
+    border-radius: 5em;
+    width: 20em;
+    line-height: 2.5em;
+    font-size: 0.6em;
+    font-weight: 600;
+    background-color: rgb(8, 11, 18);
+    color: white;
 }
 
 /* main content */
