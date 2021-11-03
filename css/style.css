@@ -8,3 +8,71 @@ html  {
     font-size: 100%;
     font-family: 'Montserrat', sans-serif;
 }
+
+main  {
+    display: flex;
+}
+
+main ul  {
+    color: grey;
+}
+
+ul  {
+    list-style: none;
+}
+
+/* left navbar */
+.left-navbar  {
+    width: 20%;
+    font-size: 0.8em;
+    background-color: black;
+}
+
+.logo  {
+    width: 12em;
+    padding: 1em 0;
+}
+main .left-navbar img,
+main .left-navbar ul  {
+    margin-left: 1em;
+}
+
+main .left-navbar ul  {
+    font-weight: 600;
+    line-height: 2em;
+}
+
+main .left-navbar h4  {
+    margin: 0.8em 1em; 
+    color: grey;
+}
+
+.playlist-btn  {
+    font-size: 2em;
+    border: 0;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: grey;
+    vertical-align: middle;
+}
+
+/* top navbar */
+.top-navbar  {
+    height: 50px;
+    width: 800px;
+    background-color: blueviolet;
+}
+
+/* main content */
+.main-content  {
+    height: 550px;
+    width: 800px;
+    background-color: brown;
+}
+
+/* footer navbar */
+.footer-navbar  {
+    height: 100px;
+    width: 1000px;
+    background-color: coral;
+}
