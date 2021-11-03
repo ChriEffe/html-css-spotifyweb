@@ -14,37 +14,68 @@ main  {
 }
 
 main ul  {
-    color: grey;
+    color: #dfdfdf;
 }
 
 ul  {
     list-style: none;
 }
+.bold  {
+    font-weight: bold;
+}
 
 /* left navbar */
 .left-navbar  {
-    width: 20%;
+    width: 18em;
+    height: 100vh;
     font-size: 0.8em;
     background-color: black;
+    position: relative;
 }
 
 .logo  {
     width: 12em;
     padding: 1em 0;
+    color: #dfdfdf;
 }
-main .left-navbar img,
+
+main .left-navbar .logo,
 main .left-navbar ul  {
     margin-left: 1em;
 }
 
 main .left-navbar ul  {
     font-weight: 600;
-    line-height: 2em;
+    line-height: 2.5em;
+}
+
+.download  {
+    width: 1.5em;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+li hr  {
+    width: 15em;
+}
+
+#user  {
+    height: 2em;
+    width: 2em;
+    background-color: gray;
+    border-radius: 5em;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.nav-icon  {
+    width: 2em;
+    vertical-align: top;
 }
 
 main .left-navbar h4  {
     margin: 0.8em 1em; 
-    color: grey;
+    color: #dfdfdf;
 }
 
 .playlist-btn  {
@@ -52,8 +83,36 @@ main .left-navbar h4  {
     border: 0;
     width: 1.5em;
     height: 1.5em;
-    background-color: grey;
+    background-color: #dfdfdf;
     vertical-align: middle;
+}
+
+#logo-small  {
+    display: none;
+}
+
+.profile  {
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media screen and (max-width:600px)  {
+    .logo,
+    .icon-none,
+    .playlist,
+    li hr  {
+        display: none;
+    }
+
+    #logo-small  {
+        display: inline-block;
+    }
+
+    .icon  {
+        margin: 1em;
+    }
+
 }
 
 /* top navbar */
