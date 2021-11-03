@@ -27,7 +27,6 @@ ul  {
 /* left navbar */
 .left-navbar  {
     width: 18em;
-    height: 100vh;
     font-size: 0.8em;
     background-color: black;
     position: relative;
@@ -74,7 +73,7 @@ li hr  {
 }
 
 main .left-navbar h4  {
-    margin: 0.8em 1em; 
+    margin: 2.2em 1em 1em; 
     color: #dfdfdf;
 }
 
@@ -96,6 +95,10 @@ main .left-navbar h4  {
     bottom: 0;
 }
 
+.scroll  {
+    height: 100vh;
+    overflow: auto;
+}
 
 @media screen and (max-width:600px)  {
     .logo,
