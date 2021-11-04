@@ -34,7 +34,7 @@ ul  {
 
 /* left navbar */
 .left-navbar  {
-    width: 20%;
+    width: 300px;
     font-size: 0.8em;
     background-color: black;
     position: relative;
@@ -98,17 +98,21 @@ main .left-navbar h4  {
     display: none;
 }
 
-.profile  {
-    position: absolute;
-    bottom: 0;
-}
-
 .scroll  {
     height: 100vh;
     overflow: auto;
 }
 
+.icon li:hover {
+    border-left: 2px solid #adff2f;
+    cursor: pointer;
+}
+
 @media screen and (max-width:600px)  {
+    .left-navbar  {
+        width: unset;
+    }
+
     .logo,
     .icon-none,
     .playlist,
@@ -123,18 +127,21 @@ main .left-navbar h4  {
     .icon  {
         margin: 1em;
     }
-
+    #profile  {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 /* top navbar */
 .top-navbar  {
     height: 4em;
-    width: 83.282%;
+    width: 100%;
     background-color: rgba(8, 11, 18, 0.9);
     display: flex;
     justify-content: end;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
 }
@@ -151,28 +158,73 @@ main .left-navbar h4  {
     margin-right: 0.5em;
 }
 
+.top-navbar button:hover  {
+    line-height: 3em;
+    width: 20.5em;
+    cursor: pointer;
+}
+
 /* main content */
 .main-content  {
-    height: 550px;
+    height: 100%;
     width: 100%;
-    padding-top: 5em;
+    margin-top: -4em;
+    padding: 5em 0;
     background-color: #141922;
 }
 
 .categories  {
     display: flex;
     justify-content: space-around;
-    margin: 0 20em;
     font-weight: bold;
+    flex-wrap: wrap;
+    line-height: 2.5em;
+    padding: 0 12em;
 }
 
 .categories li  {
     font-size: 0.8em;
 }
 
+.recent-play  {
+    display: flex;
+}
+
+h2  {
+    padding: 1em 0.7em 0;
+    color: white;
+}
+
+.recent-play ul li img,
+.recent-play ul li {
+    width: 180px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+li h5  {
+    padding: 1em 0;
+}
+
+.recent-play ul  {
+    padding: 1em;
+}
+
+h2 ~ p  {
+    padding-left: 1.2em;
+    color: grey;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width:600px)  {
+    .categories  {
+        padding: 0 4em;
+    }
+}
+
 /* footer navbar */
 .footer-navbar  {
     height: 100px;
-    width: 1000px;
+    width: 100%;
     background-color: coral;
 }
