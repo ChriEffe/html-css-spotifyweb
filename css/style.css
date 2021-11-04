@@ -36,6 +36,10 @@ ul  {
     border-radius: 50%;
 }
 
+.flex  {
+    display: flex;
+}
+
 /* left navbar */
 .left-navbar  {
     width: 300px;
@@ -103,7 +107,7 @@ main .left-navbar h4  {
 }
 
 .scroll  {
-    height: 100vh;
+    height: 60vh;
     overflow: auto;
 }
 
@@ -175,11 +179,10 @@ main .left-navbar h4  {
 
 /* main content */
 .main-content  {
-    height: 100%;
-    width: 100%;
     margin-top: -4em;
     padding: 5em 0;
     background-color: #141922;
+    overflow: auto;
 }
 
 .categories  {
@@ -212,12 +215,12 @@ h2  {
     font-size: 0.8em;
 }
 
-li h5  {
+.recent-play ul li h5  {
     padding: 1em 0;
 }
 
 .recent-play ul  {
-    padding: 1em;
+    padding: 0.8em;
 }
 
 h2 ~ p  {
@@ -237,4 +240,27 @@ h2 ~ p  {
     height: 100px;
     width: 100%;
     background-color: coral;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mini-cover  {
+    width: 50px;
+}
+
+.mini-info  {
+    display: flex;
+    align-items: center;
+}
+
+.mini-info ul li p  {
+    font-size: 0.6em;
+}
+
+.player  {
+    display: flex;
+}
+
+.player li  {
+    margin: 0 2em;
 }
