@@ -32,6 +32,10 @@ ul  {
     position: relative;
 }
 
+.radius  {
+    border-radius: 50%;
+}
+
 /* left navbar */
 .left-navbar  {
     width: 300px;
@@ -108,6 +112,11 @@ main .left-navbar h4  {
     cursor: pointer;
 }
 
+.profile  {
+    position: absolute;
+    bottom: 0;
+}
+
 @media screen and (max-width:600px)  {
     .left-navbar  {
         width: unset;
@@ -127,7 +136,7 @@ main .left-navbar h4  {
     .icon  {
         margin: 1em;
     }
-    #profile  {
+    .profile  {
         position: absolute;
         bottom: 0;
     }
@@ -188,6 +197,7 @@ main .left-navbar h4  {
 
 .recent-play  {
     display: flex;
+    flex-wrap: wrap;
 }
 
 h2  {
