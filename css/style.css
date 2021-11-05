@@ -177,6 +177,14 @@ main .left-navbar h4  {
     padding: 0 12em;
 }
 
+.categories li:active  {
+    border-bottom: 2px solid #adff2f;
+}
+
+.categories li:hover  {
+    cursor: pointer;
+}
+
 .categories li  {
     font-size: 0.8em;
 }
@@ -286,6 +294,25 @@ h2 ~ p  {
     display: inline-block;
     border-radius: 10px;
     align-self: center;
+    position: relative;
+}
+
+.circle  {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    height: 15px;
+    width: 15px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+}
+
+.bar:hover .circle,
+.vol-bar:hover .circle  {
+    display: block;
+    cursor: pointer;
 }
 
 .size  {
@@ -315,6 +342,7 @@ h2 ~ p  {
     background-color: grey;
     border-radius: 10px;
     margin-right: 1em;
+    position: relative;
 }
 
 @media screen and (max-width:600px)  {
@@ -360,5 +388,11 @@ h2 ~ p  {
 
     .volume ul {
         width: 12em;
+    }
+}
+
+@media screen and (max-width:700px)  {
+    .categories  {
+        padding: 0 5em;
     }
 }
