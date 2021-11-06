@@ -11,6 +11,8 @@ html  {
 
 main  {
     display: flex;
+    height: 100vh;
+    overflow: hidden;
 }
 
 section  {
@@ -51,7 +53,7 @@ ul  {
 .logo  {
     width: 12em;
     padding: 1em 0;
-    color: #bbbbbb;
+    color: white;
 }
 
 main .left-navbar .logo,
@@ -90,7 +92,7 @@ li hr  {
 
 main .left-navbar h4  {
     margin: 2.2em 1em 1em; 
-    color: #bbbbbb;
+    color: #8b8b8b;
 }
 
 .playlist-btn  {
@@ -98,7 +100,7 @@ main .left-navbar h4  {
     border: 0;
     width: 1.5em;
     height: 1.5em;
-    background-color: #bbbbbb;
+    background-color: #8b8b8b;
     vertical-align: middle;
 }
 
@@ -107,9 +109,8 @@ main .left-navbar h4  {
 }
 
 .scroll  {
-    min-height: 30vh;
     overflow: auto;
-    height: 65%;
+    height: 42vh;
 }
 
 .icon li img:active  {
@@ -127,8 +128,6 @@ main .left-navbar h4  {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    position: absolute;
-    bottom: 100px;
 }
 
 /* top navbar */
@@ -308,7 +307,7 @@ h2 ~ p  {
     transform: translate(-50%, -50%);
     height: 15px;
     width: 15px;
-    background-color: #bbbbbb;
+    background-color: #8b8b8b;
     border-radius: 50%;
 }
 
